@@ -3,7 +3,7 @@
     <div class="nav has-shadow">
       <div class="container">
         <div class="nav-left">
-          <a class="nav-item" style="color: #ffffff; font-weigt: 700; font-size: 57">CCompany</a>
+          <a href="/" class="nav-item" style="color: #ffffff; font-weigt: 700; font-size: 57">CCompany</a>
         </div>
 
         <span class="nav-toggle" v-on:click="toggleNav" v-bind:class="{ 'is-active': isActive}">
@@ -22,10 +22,7 @@
           <div class="nav-item">
             <p class="control">
               <a class="button-join button">
-                <!--<span class="icon">
-                  <i class="fa fa-download"></i>
-                </span>-->
-                <span>Join Now</span>
+                <router-link to="login" class="nav-item r-item"><span>Join Now</span></router-link>
               </a>
             </p>
           </div>
@@ -43,10 +40,10 @@
             <p>Proin ultrices massa sed mauris tincidunt mollis.</p>
           </div>
           <div class="column has-text-right">
-              <a href="#" class="icon"><i style=" color: #ffffff !important" class="fa fa-whatsapp"></i></a>
-              <a href="#" class="icon"><i style=" color: #ffffff !important"  class="fa fa-pinterest-p"></i></a>
-              <a href="#" class="icon"><i style=" color: #ffffff !important"  class="fa fa-facebook"></i></a>
-              <a href="#" class="icon"><i style=" color: #ffffff !important"  class="fa fa-instagram"></i></a>
+              <a style="padding: 15px; " href="#" class="icon"><i style="color: #fff; " class="fab fa-whatsapp-square fa-2x"></i></a>
+              <a style="padding: 15px; " href="#" class="icon"><i style="color: #fff;" class="fab fa-pinterest-square fa-2x"></i></a>
+              <a style="padding: 15px; " href="#" class="icon"><i style="color: #fff;" class="fab fa-facebook-square fa-2x"></i></i></a>
+              <a style="padding: 15px; " href="#" class="icon"><i style="color: #fff;" class="fab fa-instagram fa-2x"></i></a>
           </div>
         </div>
       </div>
@@ -100,5 +97,6 @@ a.r-item
 
 .nav-item:hover
   color: #A020F0 !important
+
 
 </style>
